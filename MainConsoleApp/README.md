@@ -1,2 +1,2 @@
-# SumTwoMinValueOfArray
-# KEK LOL
+# MainConsoleApp
+
