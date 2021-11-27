@@ -25,10 +25,10 @@ namespace SumTwoMinValueOfArrayTestsLib
         {
             //arrange
             double[] array = { 1.1, 2.2, double.NaN, 4, 5.5 };
-            double expected = 2;
+            double expected = 3.3;
             //act
             var calc = new Array—alculations();
-            double actual = calc.SumTwoMinValues(array);
+            double actual = Math.Round(calc.SumTwoMinValues(array), 4);
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -67,7 +67,7 @@ namespace SumTwoMinValueOfArrayTestsLib
             float expected = 3.3f;
             //act
             var calc = new Array—alculations();
-            float actual = (float)calc.SumTwoMinValues(array);
+            float actual = (float)Math.Round(calc.SumTwoMinValues(array), 4);
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -80,7 +80,7 @@ namespace SumTwoMinValueOfArrayTestsLib
             double expected = 3.3;
             //act
             var calc = new Array—alculations();
-            double actual = calc.SumTwoMinValues(array);
+            double actual = Math.Round(calc.SumTwoMinValues(array), 4);
             //assert
             Assert.AreEqual(expected, actual);
         }
