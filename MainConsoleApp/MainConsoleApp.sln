@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainConsoleApp", "MainConsoleApp.csproj", "{FEF941A9-81C6-4F30-BFF5-1C01DA03BF24}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumTwoMinValueOfArrayTestsLib", "..\SumTwoMinValueOfArrayTestsLib\SumTwoMinValueOfArrayTestsLib.csproj", "{ADEDD565-C615-4E55-8010-7C8073688DC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumTwoMinValueTestsLib", "..\SumTwoMinValueOfArrayTestsLib\SumTwoMinValueTestsLib.csproj", "{ADEDD565-C615-4E55-8010-7C8073688DC2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayTestsLib", "..\ArrayTestsLib\ArrayTestsLib.csproj", "{20E2BCE9-F62D-4974-9372-598A375CE291}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumTwoMinValueOfArrayLib", "..\SumTwoMinValueOfArrayLib\SumTwoMinValueOfArrayLib.csproj", "{20E4D0FB-1DD7-4842-B21D-7767F2928C41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayProcessingLib", "..\SumTwoMinValueOfArrayLib\ArrayProcessingLib.csproj", "{20E4D0FB-1DD7-4842-B21D-7767F2928C41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
