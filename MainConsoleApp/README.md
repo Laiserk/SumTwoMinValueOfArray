@@ -1,2 +1,2 @@
 # SumTwoMinValueOfArray
-# LOL
+# KEK LOL

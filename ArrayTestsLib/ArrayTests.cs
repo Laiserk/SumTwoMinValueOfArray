@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ArrayTestsLib
 {
     [TestClass]
-    public class UnitTest1
+    public class ArrayTests
     {
         [TestMethod]
         public void TestMethod1()
