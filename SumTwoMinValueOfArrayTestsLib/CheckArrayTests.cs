@@ -16,7 +16,7 @@ namespace SumTwoMinValueTestsLib
             ;
             //act
             var calc = new ArrayСalculations();
-            string actual = calc.SumTwoMinValues(array);
+            string actual = calc.CheckArray(array);
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -28,7 +28,7 @@ namespace SumTwoMinValueTestsLib
             string expected = "Some values cannot be processed";
             //act
             var calc = new ArrayСalculations();
-            string actual = calc.SumTwoMinValues(array);
+            string actual = calc.CheckArray(array);
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -40,7 +40,7 @@ namespace SumTwoMinValueTestsLib
             string expected = "Some values cannot be processed";
             //act
             var calc = new ArrayСalculations();
-            string actual = calc.SumTwoMinValues(array);
+            string actual = calc.CheckArray(array);
             //assert
             Assert.AreEqual(expected, actual);
         }
