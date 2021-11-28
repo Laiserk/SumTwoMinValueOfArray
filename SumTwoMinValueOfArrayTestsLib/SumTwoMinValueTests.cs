@@ -2,46 +2,20 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using ArrayProcessingLib;
 
-namespace SumTwoMinValueOfArrayTestsLib
+namespace SumTwoMinValueTestsLib
 {
     [TestClass]
     public class SumTwoMinValueTests
     {
-
         [TestMethod]
         public void TestNonUniqueValues()
         {
             //arrange
-            double[] array = {1.1, 1, 1.1, 2.2, 3, 3, 1, 4.4, 1, 5.5};
-            double expected = 2;
+            string[] array = { "1,1", "1", "1,1", "2,2", "3", "3", "1", "4,4", "1", "5,5" };
+            string expected = "2";
             //act
             var calc = new ArrayÑalculations();
-            double actual = calc.SumTwoMinValues(array);
-            //assert
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        public void TestArrayWithNonNumericValues()
-        {
-            //arrange
-            double[] array = { 1.1, 2.2, double.NaN, 4, 5.5 };
-            double expected = 3.3;
-            //act
-            var calc = new ArrayÑalculations();
-            double actual = Math.Round(calc.SumTwoMinValues(array), 4);
-            //assert
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        public void TestArrayWithCharValues()
-        {
-            //arrange
-            double[] array = { 1.1, 2.2, '!', 4, 5.5 };
-            int expected = 3;
-            //act
-            var calc = new ArrayÑalculations();
-            int actual = (int)calc.SumTwoMinValues(array);
+            string actual = calc.SumTwoMinValues(array);
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -50,11 +24,11 @@ namespace SumTwoMinValueOfArrayTestsLib
         public void TestArrayWithIntValues()
         {
             //arrange
-            double[] array = {1, 2, 3, 4, 5};
+            string[] array = { "1", "2", "3", "4", "5" };
             int expected = 3;
             //act
             var calc = new ArrayÑalculations();
-            int actual = (int)calc.SumTwoMinValues(array);
+            int actual = int.Parse(calc.SumTwoMinValues(array));
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -63,11 +37,11 @@ namespace SumTwoMinValueOfArrayTestsLib
         public void TestArrayWithFloatValues()
         {
             //arrange
-            double[] array = {1.1f, 2.2f, 3, 4, 5.5f};
+            string[] array = { "1,1", "2,2", "3", "4", "5,5" };
             float expected = 3.3f;
             //act
             var calc = new ArrayÑalculations();
-            float actual = (float)Math.Round(calc.SumTwoMinValues(array), 4);
+            float actual = float.Parse(calc.SumTwoMinValues(array));
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -76,11 +50,11 @@ namespace SumTwoMinValueOfArrayTestsLib
         public void TestArrayWithDoubleValues()
         {
             //arrange
-            double[] array = {1.1, 2.2, 3, 4, 5.5};
+            string[] array = { "1,1", "2,2", "3", "4", "5,5" };
             double expected = 3.3;
             //act
             var calc = new ArrayÑalculations();
-            double actual = Math.Round(calc.SumTwoMinValues(array), 4);
+            double actual = double.Parse(calc.SumTwoMinValues(array));
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -89,11 +63,11 @@ namespace SumTwoMinValueOfArrayTestsLib
         public void TestArrayNegativeIntValues()
         {
             //arrange
-            double[] array = {1, -2, 3, -4, 5};
+            string[] array = { "1", "-2", "3", "-4", "5" };
             int expected = -6;
             //act
             var calc = new ArrayÑalculations();
-            int actual = (int)calc.SumTwoMinValues(array);
+            int actual = int.Parse(calc.SumTwoMinValues(array));
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -102,11 +76,11 @@ namespace SumTwoMinValueOfArrayTestsLib
         public void TestArrayNegativeFloatValues()
         {
             //arrange
-            double[] array = { 1.1f, -2.2f, 3, -4, 5.5f };
+            string[] array = { "1,1", "-2,2", "3", "-4", "5,5" };
             float expected = -6.2f;
             //act
             var calc = new ArrayÑalculations();
-            float actual = (float)calc.SumTwoMinValues(array);
+            float actual = float.Parse(calc.SumTwoMinValues(array));
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -115,11 +89,11 @@ namespace SumTwoMinValueOfArrayTestsLib
         public void TestArrayNegativeDoubleValues()
         {
             //arrange
-            double[] array = { 1.1, -2.2, 3, -4, 5.5 };
+            string[] array = { "1,1", "-2,2", "3", "-4", "5,5" };
             double expected = -6.2;
             //act
             var calc = new ArrayÑalculations();
-            double actual = calc.SumTwoMinValues(array);
+            double actual = double.Parse(calc.SumTwoMinValues(array));
             //assert
             Assert.AreEqual(expected, actual);
         }
